@@ -1,0 +1,11 @@
+.story {
+  
+  &__video {
+    background-color: black;
+    grid-column: full-start / col-end 6;
+  }
+
+  &__content {
+    grid-column: col-start 7 / full-end;
+  }
+}

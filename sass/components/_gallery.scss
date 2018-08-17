@@ -1,0 +1,21 @@
+.gallery {
+  background-color: $color-secondary;
+  color: blue;
+  grid-column: full-start / full-end;
+
+  &__1 {
+    background-color: $color-fourth;
+  }
+  
+  &__2 {
+    background-color: $color-fourth;
+  }
+
+  &__3 {
+    background-color: $color-fourth;
+  }
+
+  &__4 {
+    background-color: $color-fourth;
+  }
+}

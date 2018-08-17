@@ -7,7 +7,8 @@
 }
 
 html {
-  font-size: 62.5%; 
+  box-sizing: border-box;
+  font-size: 62.5%;
   /*
   100% = 16px
   62.5% equivalent to 10px = 1rem 
@@ -28,5 +29,5 @@ html {
 }
 
 body {
-  box-sizing: border-box;
+  background-color: $color-secondary;
 }

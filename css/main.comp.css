@@ -114,8 +114,31 @@ cta {
     background-color: #aaa; }
 
 .header {
-  background-color: #111;
-  grid-column: full-start / full-end; }
+  grid-column: full-start / full-end;
+  background-image: url("../images/header-lrg.jpeg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; }
+  .header__textbox {
+    text-align: center;
+    color: #f9f7f6;
+    position: relative; }
+  .header__sub-title {
+    font-size: 8rem;
+    font-family: "Sacramento", sans-serif;
+    position: absolute;
+    top: 3%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent; }
+  .header__main-title {
+    text-transform: uppercase;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 20rem;
+    border-top: 1px solid #f9f7f6;
+    border-bottom: 1px solid #f9f7f6;
+    margin-bottom: 5rem; }
 
 .sidebar {
   background-color: #caa270;
@@ -140,5 +163,5 @@ cta {
 
 .container {
   display: grid;
-  grid-template-rows: 90vh 40vw min-content 40vw min-content 40vw min-content 40vw min-content 40vw;
+  grid-template-rows: 100vh 40vw min-content 40vw min-content 40vw min-content 40vw min-content 40vw;
   grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }

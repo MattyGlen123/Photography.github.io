@@ -1,4 +1,36 @@
 .header {
-  background-color: $color-primary;
   grid-column: full-start / full-end;
+
+  background-image: url('../images/header-lrg.jpeg');
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+  &__textbox {
+    text-align: center;
+    color: $color-secondary;
+    position: relative;
+  }
+
+  &__sub-title {
+    font-size: 8rem;
+    font-family: $font-secondary;
+    position: absolute;
+    top: 3%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+  }
+
+  &__main-title {
+    text-transform: uppercase;
+    font-family: $font-display;
+    font-size: 20rem;
+    border-top: 1px solid $color-secondary;
+    border-bottom: 1px solid $color-secondary;
+    margin-bottom: 5rem;
+  }
 }
+

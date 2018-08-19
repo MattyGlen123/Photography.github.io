@@ -3,34 +3,39 @@
 
   background-image: url('../images/header-lrg.jpeg');
   background-size: cover;
+  position: relative;
+  text-align: center;
+  color: $color-secondary;
+  padding: 0 10rem;
+  line-height: 1;
 
   display: flex;
-  justify-content: center;
-  align-items: flex-end;
-
-  &__textbox {
-    text-align: center;
-    color: $color-secondary;
-    position: relative;
-  }
+  flex-direction: column;
+  justify-content: flex-end;
 
   &__sub-title {
     font-size: 8rem;
     font-family: $font-secondary;
-    position: absolute;
-    top: 3%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: transparent;
+
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    align-items: center;
+    grid-column-gap: 2.5rem;
+
+    &::before,
+    &::after {
+      content: "";
+      height: 1px;
+      display: block;
+      background-color: $color-secondary;
+    }
   }
 
   &__main-title {
     text-transform: uppercase;
     font-family: $font-display;
     font-size: 20rem;
-    border-top: 1px solid $color-secondary;
     border-bottom: 1px solid $color-secondary;
-    margin-bottom: 5rem;
   }
 }
 

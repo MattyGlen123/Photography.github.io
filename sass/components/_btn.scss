@@ -1,0 +1,28 @@
+.btn {
+  border: none;
+  border-radius: 50px;
+  font-family: $font-primary;
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  padding: 1.5rem 4rem;
+  cursor: pointer;
+  transition: all .3s;
+
+  &:hover {
+    transform: translateY(1px);
+  }
+
+  &--light {
+    background-color: $color-secondary;
+    color: $color-primary;
+
+    &:hover {
+      background-color: darken($color-secondary, 5%);
+    }
+  }
+
+  &--dark {
+
+  }
+}

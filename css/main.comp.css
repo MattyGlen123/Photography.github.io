@@ -153,28 +153,31 @@ cta {
   grid-column: full-start / full-end;
   background-image: url("../images/header-lrg.jpeg");
   background-size: cover;
+  position: relative;
+  text-align: center;
+  color: #f9f7f6;
+  padding: 0 10rem;
+  line-height: 1;
   display: flex;
-  justify-content: center;
-  align-items: flex-end; }
-  .header__textbox {
-    text-align: center;
-    color: #f9f7f6;
-    position: relative; }
+  flex-direction: column;
+  justify-content: flex-end; }
   .header__sub-title {
     font-size: 8rem;
     font-family: "Sacramento", sans-serif;
-    position: absolute;
-    top: 3%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: transparent; }
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    align-items: center;
+    grid-column-gap: 2.5rem; }
+    .header__sub-title::before, .header__sub-title::after {
+      content: "";
+      height: 1px;
+      display: block;
+      background-color: #f9f7f6; }
   .header__main-title {
     text-transform: uppercase;
     font-family: "Josefin Sans", sans-serif;
     font-size: 20rem;
-    border-top: 1px solid #f9f7f6;
-    border-bottom: 1px solid #f9f7f6;
-    margin-bottom: 5rem; }
+    border-bottom: 1px solid #f9f7f6; }
 
 .sidebar {
   background-color: #caa270;

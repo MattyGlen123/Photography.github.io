@@ -182,7 +182,26 @@ cta {
   grid-row: 1 / -1; }
 
 .story__video {
-  grid-column: full-start / col-end 4; }
+  grid-column: full-start / col-end 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-image: url("../images/mountain-lrg.jpeg");
+  background-size: cover; }
+
+.story__img--1 {
+  width: 55%;
+  z-index: 2;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.1); }
+
+.story__img--2 {
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  right: -5%;
+  z-index: 3;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.1); }
 
 .story__content {
   grid-column: col-start 5 / full-end;

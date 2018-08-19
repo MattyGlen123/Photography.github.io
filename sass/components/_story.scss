@@ -1,9 +1,33 @@
 .story {
   
   &__video {
-    // background-color: black;
     grid-column: full-start / col-end 4;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-image: url('../images/mountain-lrg.jpeg');
+    background-size: cover;
   }
+
+  &__img--1 {
+    width: 55%;
+    z-index: 2;
+
+    box-shadow: $box-shadow-light;
+  }
+
+  &__img--2 {
+    width: 50%;
+    position: absolute;
+    top: 50%; 
+    right: -5%;
+    z-index: 3;
+
+    box-shadow: $box-shadow-light;
+  }
+
 
   &__content {
     grid-column: col-start 5 / full-end;

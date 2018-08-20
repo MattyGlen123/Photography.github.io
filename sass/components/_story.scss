@@ -31,8 +31,8 @@
 
   &__content {
     grid-column: col-start 5 / full-end;
-    background-color: $color-primary;
-    color: $color-secondary;
+    background-color: $color-secondary;
+    color: $color-primary;
     padding: 6vw 6vw;
 
     display: flex;

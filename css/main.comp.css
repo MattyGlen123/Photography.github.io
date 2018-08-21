@@ -261,17 +261,12 @@ cta {
       content: "";
       height: 1px;
       display: block;
-      background-color: #f9f7f6; }
+      background-color: #caa270; }
   .header__main-title {
     text-transform: uppercase;
     font-family: "Josefin Sans", sans-serif;
     font-size: 20rem;
-    border-bottom: 1px solid #f9f7f6; }
-
-.sidebar {
-  background-color: #caa270;
-  grid-column: sidebar-start / sidebar-end;
-  grid-row: 1 / -1; }
+    border-bottom: 1px solid #caa270; }
 
 .story__video {
   grid-column: full-start / col-end 4;
@@ -319,4 +314,4 @@ cta {
 .container {
   display: grid;
   grid-template-rows: 100vh 40vw min-content 40vw min-content 40vw min-content 40vw min-content 40vw;
-  grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
+  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }

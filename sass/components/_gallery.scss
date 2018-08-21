@@ -69,10 +69,7 @@
       grid-column: 5 / 8; 
     }
 
-    &--13 {
-      grid-row: 1 / -1;
-      grid-column: 8 / 9;
-    }
+
   }
 
   &__img {
@@ -83,7 +80,6 @@
   }
 
   &__title {
-    color: $color-secondary;
     text-align: center;
     font-size: 10rem;
     font-family: $font-display;
@@ -94,17 +90,41 @@
 
   &__1 {
     background-color: $color-primary;
+
+    &--item-13 {
+      grid-row: 1 / -1;
+      grid-column: 8 / 9;
+      color: $color-secondary;
+    }
   }
   
   &__2 {
     background-color: $color-secondary;
+
+    &--item-13 {
+      grid-row: 2 / -1;
+      grid-column: 8 / 9;
+      color: $color-primary;
+    }
   }
 
   &__3 {
-    background-color: $color-fourth;
+    background-color: $color-tertiary;
+
+    &--item-13 {
+      grid-row: 2 / -1;
+      grid-column: 8 / 9;
+      color: $color-primary;
+    }
   }
 
   &__4 {
     background-color: $color-fourth;
+
+    &--item-13 {
+      grid-row: 1 / -1;
+      grid-column: 8 / 9;
+      color: $color-secondary;
+    }
   }
 }

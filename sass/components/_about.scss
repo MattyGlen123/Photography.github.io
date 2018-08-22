@@ -1,4 +1,21 @@
 .about {
   color: black;
-  grid-column: center-start / center-end;
+  grid-column: full-start / full-end;
+  background-image: url(../images/camera-lrg.jpeg);
+  background-size: cover;
+  background-position: center;
+  padding: 20rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  &__heading {
+    color: $color-tertiary;
+  }
+
+  &__text {
+    font-size: 1.5rem;
+    display: block;
+    width: 50%;
+  }
 }

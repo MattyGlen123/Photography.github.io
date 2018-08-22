@@ -109,22 +109,22 @@
   }
 
   &__3 {
-    background-color: $color-tertiary;
+    background-color: $color-primary;
 
     &--item-13 {
       grid-row: 2 / -1;
       grid-column: 8 / 9;
-      color: $color-primary;
+      color: $color-secondary;
     }
   }
 
   &__4 {
-    background-color: $color-fourth;
+    background-color: $color-secondary;
 
     &--item-13 {
       grid-row: 1 / -1;
       grid-column: 8 / 9;
-      color: $color-secondary;
+      color: $color-primary;
     }
   }
 }

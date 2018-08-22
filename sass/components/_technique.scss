@@ -3,11 +3,23 @@
 
   &__content {
     grid-column: full-start / col-end 4;
-    background-color: $color-tertiary;
+    padding: 6vw 6vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__text {
+    font-size: 1.5rem;
+    margin-bottom: 4rem;
+    
   }
 
   &__pictures {
     grid-column: col-start 5 / full-end;
+    background-image: url("../images/pictures-lrg.jpeg");
+    background-size: cover;
     
   }
 

@@ -330,7 +330,8 @@ cta {
     margin-bottom: 4rem; }
   .technique__pictures {
     grid-column: col-start 5 / full-end;
-    background-color: #111; }
+    background-image: url("../images/pictures-lrg.jpeg");
+    background-size: cover; }
 
 .container {
   display: grid;

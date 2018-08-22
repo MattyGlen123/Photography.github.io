@@ -109,18 +109,31 @@ body {
 
 .about {
   color: black;
-  grid-column: center-start / center-end; }
+  grid-column: full-start / full-end;
+  background-image: url(../images/camera-lrg.jpeg);
+  background-size: cover;
+  background-position: center;
+  padding: 20rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
+  .about__heading {
+    color: #caa270; }
+  .about__text {
+    font-size: 1.5rem;
+    display: block;
+    width: 50%; }
 
 .btn {
-  border: none;
-  border-radius: 50px;
+  border: 4px solid #111;
   font-family: "Nunito", sans-serif;
   font-size: 1.5rem;
   font-weight: 800;
   text-transform: uppercase;
   padding: 1.5rem 4rem;
   cursor: pointer;
-  transition: all .3s; }
+  transition: all .3s;
+  display: block; }
   .btn:hover {
     transform: translateY(1px); }
   .btn--light {
@@ -165,7 +178,7 @@ cta {
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(7, 5vw);
   grid-gap: 1.5rem;
-  padding: 1.5rem; }
+  padding: 20rem 1.5rem; }
   .gallery__item--1 {
     grid-row: 1 / span 2;
     grid-column: 1 / span 2; }

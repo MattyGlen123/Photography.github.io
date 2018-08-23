@@ -10,7 +10,30 @@
   <title>Black & White Photography</title>
 </head>
 <body class="container">
-  <header class="header">
+  <div class="navigation">
+    <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+    
+    <label class="navigation__btn" for="navi-toggle">
+      <span class="navigation__icon">&nbsp;</span>
+    </label>
+
+    <div class="navigation__background">&nbsp;</div>
+
+    <nav class="navigation__nav">
+      <ul class="navigation__list">
+        <li class="navigation__item"><a href="#home" class="navigation__link">About</a></li>
+        <li class="navigation__item"><a href="#south" class="navigation__link">South Gallery</a></li>
+        <li class="navigation__item"><a href="#video" class="navigation__link">Pavey night trail</a></li>
+        <li class="navigation__item"><a href="#east" class="navigation__link">East Gallery</a></li>
+        <li class="navigation__item"><a href="#develop" class="navigation__link">Developing Process</a></li>
+        <li class="navigation__item"><a href="#west" class="navigation__link">West Gallery</a></li>
+        <li class="navigation__item"><a href="#contact" class="navigation__link">Contact Me</a></li>
+        <li class="navigation__item"><a href="#quirk" class="navigation__link">Quirk Gallery</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <header class="header" id="home">
       <div class="header__sub-title">Real</div>    
       <h1 class="header__main-title u-margin-bottom-med">Cumbria</h1>
   </header>
@@ -20,7 +43,7 @@
       <p class="about__text">I’ve always appreciated and enjoyed my natural surroundings, be it Fell Walking, Mountain Biking, Potholing or Skiing it has always been a part of my life. But it wasn’t until I picked up a camera seriously in my early twenties that I discovered something with a real substance and fulfilment.</p>
   </section>
 
-  <section class="gallery gallery__1">
+  <section class="gallery gallery__1" id="south">
     <figure class="gallery__item gallery__item--1"><img src="images/gal-1.jpeg" alt="gallery image 1" class="gallery__img"></figure>
     <figure class="gallery__item gallery__item--2"><img src="images/gal-2.jpeg" alt="gallery image 2" class="gallery__img"></figure>
     <figure class="gallery__item gallery__item--3"><img src="images/gal-3.jpeg" alt="gallery image 3" class="gallery__img"></figure>
@@ -38,7 +61,7 @@
     </figure>
   </section>
 
-  <div class="story story__video">
+  <div class="story story__video" id="video">
     <img src="images/moon-lrg.jpeg" alt="camera" class="story__img--1">
     <img src="images/boat-lrg.jpeg" alt="boat" class="story__img--2">
   </div>
@@ -51,7 +74,7 @@
     <button class="btn btn--light">View Picture</button>
   </div>
 
-  <section class="gallery gallery__2">
+  <section class="gallery gallery__2" id="east">
       <figure class="gallery__item gallery__item--1"><img src="images/gal-1.jpeg" alt="gallery image 1" class="gallery__img"></figure>
       <figure class="gallery__item gallery__item--2"><img src="images/gal-2.jpeg" alt="gallery image 2" class="gallery__img"></figure>
       <figure class="gallery__item gallery__item--3"><img src="images/gal-3.jpeg" alt="gallery image 3" class="gallery__img"></figure>
@@ -69,14 +92,14 @@
       </figure>
   </section>
 
-  <div class="technique technique__content">
+  <div class="technique technique__content" id="develop">
       content
   </div>
   <div class="technique technique__pictures">
       technique__pictures 
   </div>
 
-  <section class="gallery gallery__3">
+  <section class="gallery gallery__3" id="west">
       <figure class="gallery__item gallery__item--1"><img src="images/gal-1.jpeg" alt="gallery image 1" class="gallery__img"></figure>
       <figure class="gallery__item gallery__item--2"><img src="images/gal-2.jpeg" alt="gallery image 2" class="gallery__img"></figure>
       <figure class="gallery__item gallery__item--3"><img src="images/gal-3.jpeg" alt="gallery image 3" class="gallery__img"></figure>
@@ -94,11 +117,11 @@
       </figure>
   </section>
 
-  <section class="cta">
+  <section class="cta" id="contact">
     Contact
   </section>
 
-  <section class="gallery gallery__4">
+  <section class="gallery gallery__4" id="quirk">
       <figure class="gallery__item gallery__item--1"><img src="images/gal-1.jpeg" alt="gallery image 1" class="gallery__img"></figure>
       <figure class="gallery__item gallery__item--2"><img src="images/gal-2.jpeg" alt="gallery image 2" class="gallery__img"></figure>
       <figure class="gallery__item gallery__item--3"><img src="images/gal-3.jpeg" alt="gallery image 3" class="gallery__img"></figure>
@@ -118,14 +141,14 @@
 
   <footer class="footer">
     <ul class="nav u-margin-bottom-lrg">
-      <li class="nav__item"><a href="#" class="nav__link">About</a></li>
-      <li class="nav__item"><a href="#" class="nav__link">Gallery South</a></li>
-      <li class="nav__item"><a href="#" class="nav__link">Pavey night trail</a></li>
-      <li class="nav__item"><a href="#" class="nav__link">Gallery Eat</a></li>
-      <li class="nav__item"><a href="#" class="nav__link">Developing Process</a></li>
-      <li class="nav__item"><a href="#" class="nav__link">Gallery West</a></li>
-      <li class="nav__item"><a href="#" class="nav__link">Contact Me</a></li>
-      <li class="nav__item"><a href="#" class="nav__link">Gallery Quirk</a></li>
+      <li class="nav__item"><a href="#home" class="nav__link">About</a></li>
+      <li class="nav__item"><a href="#south" class="nav__link">South Gallery</a></li>
+      <li class="nav__item"><a href="#video" class="nav__link">Pavey night trail</a></li>
+      <li class="nav__item"><a href="#east" class="nav__link">East Gallery</a></li>
+      <li class="nav__item"><a href="#devlope" class="nav__link">Developing Process</a></li>
+      <li class="nav__item"><a href="#west" class="nav__link">West Gallery</a></li>
+      <li class="nav__item"><a href="#contact" class="nav__link">Contact Me</a></li>
+      <li class="nav__item"><a href="#quirk" class="nav__link">Quirk Gallery</a></li>
     </ul>
     <div class="footer__title-box">
       <h2 class="heading-2 heading-2--gold u-margin-bottom-med">

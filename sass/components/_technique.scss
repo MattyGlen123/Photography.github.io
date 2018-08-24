@@ -1,13 +1,24 @@
 .technique {
-  color: black;
+  color: $color-secondary;
+
+  &__background {
+    grid-column: full-start / full-end;
+    background-image: linear-gradient(70deg, rgba($color-primary, .9) 0%,
+                      rgba($color-primary, .9) 50%,
+                      transparent 50%),
+                      url("../images/gallery-lrg.jpeg");
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+  }
 
   &__content {
-    grid-column: full-start / col-end 4;
-    padding: 6vw 6vw;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: flex-start;
+    padding: 6vw;
+    width: 50%;
   }
 
   &__text {
@@ -15,12 +26,4 @@
     margin-bottom: 4rem;
     
   }
-
-  &__pictures {
-    grid-column: col-start 5 / full-end;
-    background-image: url("../images/pictures-lrg.jpeg");
-    background-size: cover;
-    
-  }
-
 }

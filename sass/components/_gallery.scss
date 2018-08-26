@@ -119,12 +119,12 @@
   }
 
   &__4 {
-    background-color: $color-secondary;
+    background-color: $color-primary;
 
     &--item-13 {
       grid-row: 1 / -1;
       grid-column: 8 / 9;
-      color: $color-primary;
+      color: $color-tertiary;
     }
   }
 }

@@ -122,8 +122,28 @@
       </figure>
   </section>
 
-  <section class="cta" id="contact">
-    Contact
+  <section class="contact" id="contact">
+    <div class="contact__text-box">
+      <h3 class="contact__header heading-2 u-margin-bottom-sml">Order Now</h3>
+      <p class="contact__text u-margin-bottom-med">Original Hand Printed Silver Gelatin Prints are available direct from myself via mail order. Prints are very limited as only a handful are printed at any one time, please email (contact) me to check availability.</p>
+    </div>
+    <div class="contact__frames u-margin-bottom-sml">
+      <div class="contact__frame">
+        <p class="contact__frame-text">Image Printed on 10”x8” paper - 250mm x 175mm (approx)</p>
+        <span class="contact__price">£75</span>
+        <a href="#pop-up" class="contact__btn btn btn--light">Contact Me</a>
+      </div>
+      <div class="contact__frame">
+        <p class="contact__frame-text">Image Printed on 12”x16” paper- 290mm x 290mm (approx) SQ Format.</p>
+        <span class="contact__price">£100</span>
+        <a href="#pop-up" class="contact__btn btn btn--light">Contact Me</a>
+      </div>
+      <div class="contact__frame">
+        <p class="contact__frame-text">Image Printed on 12"x16" paper- 400mm x 280mm (approx)</p>
+        <span class="contact__price">£110</span>
+        <a href="#pop-up" class="contact__btn btn btn--light">Contact Me</a>
+      </div>
+    </div>
   </section>
 
   <section class="gallery gallery__4" id="quirk">
@@ -165,6 +185,37 @@
         <small class="footer__copyright">&copy; 2018 Matthew Glen - 07803361392 Contact</small>
     </div>
   </footer>
+
+<div class="pop-up" id="pop-up">
+    <div class="pop-up__content">
+      <a href="#contact" class="pop-up__close">&times;</a>
+      <form action="post" class="form">
+        <div class="u-margin-bottom-sml">
+          <h3 class="heading-4">
+            Contact Me for Availability and Queries
+          </h3>
+        </div>
+        <div class="form__group">
+          <input id="name" type="text" class="form__input" placeholder="Full Name" required>
+          <label for="name" class="form__label">Full Name</label>
+        </div>
+        <div class="form__group">
+          <input id="email" type="email" class="form__input" placeholder="Email" required>
+          <label for="email" class="form__label">Email</label>
+        </div>
+        <div class="form__group">
+          <input id="subject" type="text" class="form__input" placeholder="Subject">
+          <label for="subject" class="form__label">Subject</label>
+        </div>
+        <div class="form__group">
+          <textarea name="message" id="message" cols="22" rows="5" class="form__message" placeholder="Message"></textarea>
+        </div>
+        <div class="form__group">
+          <button class="btn u-margin-b">Send</button>
+        </div>
+      </form>
+    </div>
+  </div>
 <script src="script.js"></script>
 </body>
 </html>

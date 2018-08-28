@@ -148,6 +148,7 @@ body {
   transition: all 1s 1s; }
 
 .btn {
+  text-decoration: none;
   font-family: "Nunito", sans-serif;
   font-size: 1.5rem;
   font-weight: 800;
@@ -173,11 +174,50 @@ body {
     .btn--dark:hover {
       background-color: #111; }
 
-.cta {
+.contact {
   grid-column: center-start / center-end;
+  min-height: 550px;
   margin: 2rem;
   border: 1rem solid black;
-  box-shadow: 0 1.5rem 4rem rgba(17, 17, 17, 0.25); }
+  box-shadow: 0 1.5rem 4rem rgba(17, 17, 17, 0.25);
+  padding: 4rem;
+  background-image: linear-gradient(rgba(17, 17, 17, 0.8), rgba(17, 17, 17, 0.8)), url("../images/contact-lrg.jpeg");
+  background-size: cover;
+  object-fit: cover; }
+  .contact__text-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  .contact__header {
+    text-align: center;
+    color: #aaa; }
+  .contact__text {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    color: #ddd;
+    font-size: 1.4rem; }
+  .contact__frames {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem; }
+  .contact__frame {
+    background-color: rgba(17, 17, 17, 0.7);
+    padding: 4rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column; }
+  .contact__frame:hover {
+    background-color: #111;
+    transform: translateY(-3px);
+    box-shadow: 0 1.5rem 4rem rgba(17, 17, 17, 0.25); }
+  .contact__frame-text {
+    font-size: 1.4rem;
+    color: #aaa; }
+  .contact__price {
+    font-size: 5rem;
+    color: #caa270;
+    margin-top: auto; }
 
 .footer {
   background-color: #111;
@@ -265,7 +305,7 @@ body {
     .gallery__1--item-13 {
       grid-row: 1 / -1;
       grid-column: 8 / 9;
-      color: #f9f7f6; }
+      color: #caa270; }
   .gallery__2 {
     background-image: #f9f7f6; }
     .gallery__2--item-13 {
@@ -422,6 +462,82 @@ body {
 .navigation__checkbox:checked + .navigation__btn .navigation__icon::after {
   top: 0;
   transform: rotate(-135deg); }
+
+.pop-up {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: all .3s;
+  opacity: 0;
+  visibility: hidden; }
+  .pop-up:target {
+    opacity: 1;
+    visibility: visible; }
+  .pop-up:target .pop-up__content {
+    transform: scale(1); }
+  .pop-up__content {
+    width: 30rem;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 1rem 2rem black;
+    border-radius: 3px;
+    position: relative;
+    transform: scale(0);
+    transition: all .5s .2s; }
+  .pop-up__close:link, .pop-up__close:visited {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    padding: .5rem;
+    line-height: .5;
+    font-size: 2rem;
+    display: inline-block;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    transition: all .2s; }
+  .pop-up__close:hover {
+    color: gold;
+    transform: translateY(1px); }
+
+.form {
+  padding: 4rem;
+  width: 100%; }
+  .form__group:not(:last-child) {
+    margin-bottom: 1rem; }
+  .form__input, .form__message {
+    font-size: 1.5rem;
+    font-family: inherit;
+    padding: 1.5rem 2rem;
+    border-radius: 5px;
+    background-color: rbga(white, 0.5);
+    border: none;
+    border-bottom: transparent;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+    transition: all .3s; }
+    .form__input:focus, .form__message:focus {
+      outline: none;
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.7);
+      border-bottom: 3px solid green; }
+    .form__input:focus:invalid, .form__message:focus:invalid {
+      border-bottom: 3px solid red; }
+  .form__label {
+    font-size: 1.2rem;
+    margin-left: 4rem;
+    margin-top: .7rem;
+    display: block;
+    transition: all .3s; }
+  .form__input:placeholder-shown + .form__label {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-4rem); }
 
 .story__video {
   grid-column: full-start / col-end 4;

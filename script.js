@@ -26,15 +26,18 @@ function debounce(func, wait = 20, immediate = true) {
 };
 
 const aboutSection = document.querySelector('.about');
+const aboutSectionImg = document.querySelector('.about__img');
+const aboutSectionText = document.querySelector('.about__text-box');
 
-function checkslide( ) {
+function checkslide() {
   const appearAt = (window.scrollY + window.innerHeight) - aboutSection.offsetHeight / 2;
   const imageIsHalfShown = appearAt > aboutSection.offsetTop;
   
   if (imageIsHalfShown) {
-    aboutSection.classList.remove('preScroll');
-    aboutSection.classList.add('appear');
-    
+    aboutSectionImg.classList.remove('ImgPreScroll');
+    aboutSectionImg.classList.add('ImgScrolled');
+		aboutSectionText.classList.remove('TextPreScroll');
+		aboutSectionText.classList.add('TextScrolled');
   }
 }
 

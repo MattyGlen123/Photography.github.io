@@ -108,32 +108,44 @@ body {
       margin-bottom: 5rem; } }
 
 .about {
-  color: black;
+  background-color: black;
   grid-column: full-start / full-end;
-  background-image: url(../images/camera-lrg.jpeg);
-  background-size: cover;
-  background-position: center;
-  padding: 20rem;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  min-height: 560px;
-  overflow: hidden; }
+  height: 550px;
+  overflow: hidden;
+  position: relative; }
+  .about__img {
+    display: block;
+    width: 100vw;
+    max-height: 550px;
+    object-fit: cover; }
+  .about__text-box {
+    position: absolute;
+    left: 40%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%; }
   .about__heading {
     color: #caa270; }
   .about__text {
     font-size: 1.5rem;
     display: block;
-    width: 50%; }
+    width: 80%; }
 
-.preScroll {
+.ImgPreScroll {
   opacity: 0;
-  transform: scale(0.9); }
+  transform: scale(1.1); }
 
-.appear {
+.ImgScrolled {
   transform: scale(1);
   opacity: 1;
-  transition: all 1.8s; }
+  transition: all 1s; }
+
+.TextPreScroll {
+  opacity: 0; }
+
+.TextScrolled {
+  opacity: 1;
+  transition: all 1s 1s; }
 
 .btn {
   font-family: "Nunito", sans-serif;
@@ -462,5 +474,5 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: min-content 100vh 40vw min-content 40vw min-content 40vw min-content 40vw min-content 40vw;
+  grid-template-rows: min-content 100vh 550px min-content 40vw min-content 40vw min-content 40vw min-content 40vw;
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }

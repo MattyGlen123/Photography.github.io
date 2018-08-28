@@ -1,37 +1,54 @@
 .about {
-  color: black;
+  background-color: black;
   grid-column: full-start / full-end;
-  background-image: url(../images/camera-lrg.jpeg);
-  background-size: cover;
-  background-position: center;
-  padding: 20rem;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  min-height: 560px;
+  height: 550px;
   overflow: hidden;
+  position: relative;
+
+  &__img {
+    display: block;
+    width: 100vw;
+    max-height: 550px;
+    object-fit: cover;
+  }
+
+  &__text-box {
+    position: absolute;
+    left: 40%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+  }
 
   &__heading {
-    color: $color-tertiary;
-    
+    color: $color-tertiary; 
   }
 
   &__text {
     font-size: 1.5rem;
     display: block;
-    width: 50%;
+    width: 80%;
   }
 }
 
 // add and remove with javascript
 
-.preScroll {
+.ImgPreScroll {
   opacity: 0;
-  transform: scale(.9);
+  transform: scale(1.1);
 }
 
-.appear {
+.ImgScrolled {
   transform: scale(1);
   opacity: 1;
-  transition: all 1.8s;
+  transition: all 1s;
+}
+
+.TextPreScroll {
+  opacity: 0;
+}
+
+.TextScrolled {
+  opacity: 1;
+  transition: all 1s 1s;
 }

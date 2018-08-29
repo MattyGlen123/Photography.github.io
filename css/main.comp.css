@@ -80,7 +80,8 @@ body {
 
 .heading-4 {
   font-family: "Josefin Sans", sans-serif;
-  font-size: 1.6rem; }
+  font-size: 2.5rem;
+  text-align: center; }
 
 .heading-5 {
   font-family: "Josefin Sans", sans-serif;
@@ -147,7 +148,7 @@ body {
   opacity: 1;
   transition: all 1s 1s; }
 
-.btn {
+.btn, .btn:link, .btn:visited {
   text-decoration: none;
   font-family: "Nunito", sans-serif;
   font-size: 1.5rem;
@@ -157,22 +158,29 @@ body {
   cursor: pointer;
   transition: all .3s;
   display: block;
-  height: 6rem; }
-  .btn:hover {
-    transform: translateY(1px); }
-  .btn--light {
-    border: 4px solid #111;
-    background-color: #f9f7f6;
-    color: #111; }
-    .btn--light:hover {
-      background-color: #efe9e7;
-      box-shadow: 0 1rem 5rem rgba(0, 0, 0, 0.05); }
-  .btn--dark {
-    border: 4px solid rgba(249, 247, 246, 0.9);
-    background-color: transparent;
-    color: rgba(249, 247, 246, 0.9); }
-    .btn--dark:hover {
-      background-color: #111; }
+  height: 6rem;
+  border: none;
+  cursor: pointer; }
+
+.btn:hover, .btn:focus {
+  outline: none;
+  transform: translateY(-1px);
+  box-shadow: 0 1.5rem 4rem rgba(17, 17, 17, 0.25); }
+
+.btn--light {
+  border: 4px solid #111;
+  background-color: #f9f7f6;
+  color: #111; }
+  .btn--light:hover {
+    background-color: #efe9e7;
+    box-shadow: 0 1rem 5rem rgba(0, 0, 0, 0.05); }
+
+.btn--dark {
+  border: 4px solid rgba(249, 247, 246, 0.9);
+  background-color: transparent;
+  color: rgba(249, 247, 246, 0.9); }
+  .btn--dark:hover {
+    background-color: #111; }
 
 .contact {
   grid-column: center-start / center-end;
@@ -469,46 +477,51 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(17, 17, 17, 0.8);
   transition: all .3s;
   opacity: 0;
-  visibility: hidden; }
+  visibility: hidden;
+  z-index: 1003; }
   .pop-up:target {
     opacity: 1;
     visibility: visible; }
   .pop-up:target .pop-up__content {
     transform: scale(1); }
   .pop-up__content {
-    width: 30rem;
+    max-width: 60rem;
     margin: 0 auto;
-    background-color: rgba(255, 255, 255, 0.8);
-    box-shadow: 0 1rem 2rem black;
+    margin-top: 5rem;
+    background-color: #f9f7f6;
     border-radius: 3px;
     position: relative;
     transform: scale(0);
     transition: all .5s .2s; }
   .pop-up__close:link, .pop-up__close:visited {
     text-decoration: none;
-    background-color: black;
-    color: white;
+    background-color: rgba(202, 162, 112, 0.7);
+    color: #f9f7f6;
     border-radius: 50%;
-    padding: .5rem;
-    line-height: .5;
-    font-size: 2rem;
+    padding: 1rem;
+    line-height: .6;
+    font-size: 3rem;
     display: inline-block;
     position: absolute;
-    right: 1rem;
-    top: 1rem;
+    right: 2rem;
+    top: 2rem;
     transition: all .2s; }
   .pop-up__close:hover {
-    color: gold;
-    transform: translateY(1px); }
+    color: #111;
+    transform: translateY(1px);
+    background-color: #caa270; }
 
 .form {
   padding: 4rem;
   width: 100%; }
   .form__group:not(:last-child) {
     margin-bottom: 1rem; }
+  .form__heading {
+    color: #caa270;
+    padding-top: 3rem; }
   .form__input, .form__message {
     font-size: 1.5rem;
     font-family: inherit;
@@ -517,14 +530,14 @@ body {
     background-color: rbga(white, 0.5);
     border: none;
     border-bottom: transparent;
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
-    width: 70%;
+    box-shadow: 0 1rem 5rem rgba(0, 0, 0, 0.05);
     display: block;
+    width: 90%;
     margin: 0 auto;
     transition: all .3s; }
     .form__input:focus, .form__message:focus {
       outline: none;
-      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.7);
+      box-shadow: 0 1.5rem 4rem rgba(17, 17, 17, 0.25);
       border-bottom: 3px solid green; }
     .form__input:focus:invalid, .form__message:focus:invalid {
       border-bottom: 3px solid red; }
@@ -538,6 +551,17 @@ body {
     opacity: 0;
     visibility: hidden;
     transform: translateY(-4rem); }
+  .form__btn {
+    margin: 0 auto;
+    margin-top: 4rem;
+    width: 90%;
+    border: 4px solid #111;
+    border-radius: 2px;
+    background-color: rgba(202, 162, 112, 0.8);
+    color: #111;
+    letter-spacing: 3px; }
+    .form__btn:hover {
+      background-color: #caa270; }
 
 .story__video {
   grid-column: full-start / col-end 4;

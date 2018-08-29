@@ -1,18 +1,28 @@
 .btn {
-  text-decoration: none;
-  font-family: $font-primary;
-  font-size: 1.5rem;
-  font-weight: 800;
-  text-transform: uppercase;
-  padding: 1.5rem 4rem;
-  cursor: pointer;
-  transition: all .3s;
-  display: block;
-  height: 6rem;
-  
+  &,
+  &:link,
+  &:visited {
+    text-decoration: none;
+    font-family: $font-primary;
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: 1.5rem 4rem;
+    cursor: pointer;
+    transition: all .3s;
+    display: block;
+    height: 6rem;
 
-  &:hover {
-    transform: translateY(1px);
+    // styles for <button> element
+    border: none;
+    cursor: pointer;
+  }
+
+  &:hover,
+  &:focus {
+    outline: none;
+    transform: translateY(-1px);
+    box-shadow: $box-shadow;
   }
 
   &--light {

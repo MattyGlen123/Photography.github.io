@@ -70,6 +70,9 @@ body {
   line-height: 1; }
   .heading-2--gold {
     color: #caa270; }
+  @media only screen and (max-width: 37.5em) {
+    .heading-2 {
+      font-size: 4.5rem; } }
 
 .heading-3 {
   font-family: "Sacramento", sans-serif;
@@ -750,10 +753,16 @@ body {
 .technique {
   color: #f9f7f6; }
   .technique__background {
-    background-image: linear-gradient(70deg, rgba(17, 17, 17, 0.9) 0%, rgba(17, 17, 17, 0.9) 50%, transparent 50%), url("../images/gallery-lrg.jpeg");
+    background-image: linear-gradient(70deg, rgba(17, 17, 17, 0.9) 0%, rgba(17, 17, 17, 0.9) 55%, transparent 55%), url("../images/gallery-lrg.jpeg");
     background-size: cover;
     background-position: center;
     height: 100%; }
+    @media only screen and (max-width: 56.25em) {
+      .technique__background {
+        background-image: linear-gradient(70deg, rgba(17, 17, 17, 0.9) 0%, rgba(17, 17, 17, 0.9) 75%, transparent 75%), url("../images/gallery-lrg.jpeg"); } }
+    @media only screen and (max-width: 37.5em) {
+      .technique__background {
+        background-image: linear-gradient(70deg, rgba(17, 17, 17, 0.9) 0%, rgba(17, 17, 17, 0.9) 100%, transparent 100%), url("../images/gallery-lrg.jpeg"); } }
   .technique__content {
     display: flex;
     flex-direction: column;
@@ -761,6 +770,12 @@ body {
     align-items: flex-start;
     padding: 6vw;
     width: 50%; }
+    @media only screen and (max-width: 56.25em) {
+      .technique__content {
+        width: 78%; } }
+    @media only screen and (max-width: 37.5em) {
+      .technique__content {
+        width: 100%; } }
   .technique__text {
     font-size: 1.5rem;
     margin-bottom: 4rem; }

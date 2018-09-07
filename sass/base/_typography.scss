@@ -13,6 +13,10 @@ body {
   &--gold {
     color: $color-tertiary;
   }
+
+  @include respond(phone) {
+    font-size: 4.5rem;
+  }
 }
 
 .heading-3 {

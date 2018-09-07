@@ -8,6 +8,11 @@
   background-size: cover;
   object-fit: cover;
 
+  @include respond(phone) {
+    padding: 2rem 0;
+    margin: 0;
+  }
+
   &__text-box {
     display: flex;
     flex-direction: column;
@@ -21,22 +26,32 @@
 
   &__text {
     display: block;
-    width: 50%;
+    width: 60%;
     margin: 0 auto;
     color: $color-fifth;
     font-size: 1.4rem;
+
+    @include respond(tab-port) {
+      width: 80%;
+    }
+
+    @include respond(phone) {
+      width: 90%;
+    }
   }
 
   &__frames {
     display: flex;
     flex-wrap: wrap;
-    
   }
 
   &__frame {
+    flex: 1 1 300px;
     background-color: rgba($color-primary, .7); 
     padding: 4rem;
     text-align: center;
+    margin: 2rem;
+
     display: flex;
     flex-direction: column;
   }
@@ -56,6 +71,7 @@
   &__price {
     font-size: 5rem;
     color: $color-tertiary;
+    margin-bottom: 5rem;
     margin-top: auto;
   }
 }

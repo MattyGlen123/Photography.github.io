@@ -1,7 +1,4 @@
 .contact {
-  grid-column: center-start / center-end;
-  
-  min-height: 550px;
   margin: 2rem;
   border: 1rem solid black;
   box-shadow: $box-shadow;
@@ -10,6 +7,11 @@
                     url('../images/contact-lrg.jpeg');
   background-size: cover;
   object-fit: cover;
+
+  @include respond(phone) {
+    padding: 2rem 0;
+    margin: 0;
+  }
 
   &__text-box {
     display: flex;
@@ -24,22 +26,32 @@
 
   &__text {
     display: block;
-    width: 50%;
+    width: 60%;
     margin: 0 auto;
     color: $color-fifth;
     font-size: 1.4rem;
+
+    @include respond(tab-port) {
+      width: 80%;
+    }
+
+    @include respond(phone) {
+      width: 90%;
+    }
   }
 
   &__frames {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 2rem;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   &__frame {
+    flex: 1 1 300px;
     background-color: rgba($color-primary, .7); 
     padding: 4rem;
     text-align: center;
+    margin: 2rem;
+
     display: flex;
     flex-direction: column;
   }
@@ -59,6 +71,7 @@
   &__price {
     font-size: 5rem;
     color: $color-tertiary;
+    margin-bottom: 5rem;
     margin-top: auto;
   }
 }

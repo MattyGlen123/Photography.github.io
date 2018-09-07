@@ -1,29 +1,24 @@
 .story {
+  display: flex;
   
-  &__video {
-    grid-column: full-start / col-end 4;
+  @include respond(tab-port) {
+    flex-wrap: wrap-reverse;
+  }
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+  &__img {
+    flex: 1 1 50%;
     background-image: url('../images/mountain-lrg.jpeg');
     background-size: cover;
+    background-position: center;
+
+    @include respond(tab-port) {
+      height: 450px;
+      flex: 1 1 100%;
+    }
   }
-
-  &__img--2 {
-    width: 50%;
-    position: absolute;
-    top: 50%; 
-    right: -5%;
-    z-index: 3;
-
-    box-shadow: $box-shadow-light;
-  }
-
 
   &__content {
-    grid-column: col-start 5 / full-end;
+    flex: 1 1 50%;
     background-color: $color-secondary;
     color: $color-primary;
     padding: 6vw 6vw;
@@ -32,6 +27,9 @@
     flex-direction: column;
     justify-content: center;
 
+    @include respond(tab-port) {
+      flex: 1 1 100%;
+    }
   }
 
   &__text {

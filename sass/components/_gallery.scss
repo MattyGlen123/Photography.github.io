@@ -1,5 +1,4 @@
 .gallery {
-  grid-column: full-start / full-end;
 
   display: grid;
   grid-template-columns: repeat(8, 1fr);

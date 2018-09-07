@@ -2,7 +2,6 @@
   color: $color-secondary;
 
   &__background {
-    grid-column: full-start / full-end;
     background-image: linear-gradient(70deg, rgba($color-primary, .9) 0%,
                       rgba($color-primary, .9) 50%,
                       transparent 50%),
@@ -24,6 +23,5 @@
   &__text {
     font-size: 1.5rem;
     margin-bottom: 4rem;
-    
   }
 }

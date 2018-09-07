@@ -1,14 +1,14 @@
 .about {
   background-color: black;
-  grid-column: full-start / full-end;
-  height: 550px;
+  height: 100vh;
+  width: 100%;
   overflow: hidden;
   position: relative;
 
   &__img {
     display: block;
-    width: 100vw;
-    max-height: 550px;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
   }
 
@@ -17,17 +17,49 @@
     left: 40%;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 50%;
+    width: 60%;
+
+    @include respond(tab-port) {
+      top: 35%;
+      left: 45%;
+      width: 80%;
+    }
+
+    @include respond(phone) {
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      height: 100%;
+      background: rgba($color-primary, .8);
+      padding-top: 15rem;
+    }
   }
 
   &__heading {
     color: $color-tertiary; 
+
+    @include respond(phone) {
+      color: $color-secondary;
+      text-align: center;
+      width: 95%;
+    }
   }
 
   &__text {
     font-size: 1.5rem;
     display: block;
     width: 80%;
+
+    @include respond(tab-port) {
+      font-size: 2.5rem;
+    }
+
+    @include respond(phone) {
+      color: $color-tertiary;
+      margin: 0 auto;
+      font-size: 2rem;
+      width: 95%;
+    }
   }
 }
 
@@ -50,5 +82,5 @@
 
 .TextScrolled {
   opacity: 1;
-  transition: all 1s 1s;
+  transition: opacity 1s 1s;
 }

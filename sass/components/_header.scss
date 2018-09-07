@@ -1,18 +1,25 @@
 .header {
-  grid-column: full-start / full-end;
-
+  width: 100vw;
+  height: 100vh;
   background-image: url('../images/header-lrg.jpeg');
   background-size: cover;
+  background-position: center;
   position: relative;
   text-align: center;
   color: $color-secondary;
-  padding: 0 10rem;
   line-height: 1;
   
-
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+
+  @include respond(tab-land) {
+    padding: 0;
+  }
+
+  @include respond(phone) {
+    padding: 0;
+  }
 
   &__sub-title {
     font-size: 8rem;
@@ -22,6 +29,10 @@
     grid-template-columns: 1fr max-content 1fr;
     align-items: center;
     grid-column-gap: 2.5rem;
+
+    @include respond(tab-land) {
+      font-size: 5rem;
+    }
 
     &::before,
     &::after {
@@ -37,6 +48,19 @@
     font-family: $font-display;
     font-size: 20rem;
     border-bottom: 1px solid $color-tertiary;
+    width: 100%;
+
+    @include respond(tab-land) {
+      font-size: 18rem;
+    }
+
+    @include respond(tab-port) {
+      font-size: 14rem;
+    }
+
+    @include respond(phone) {
+      font-size: 7.5rem;
+    }
   }
 }
 

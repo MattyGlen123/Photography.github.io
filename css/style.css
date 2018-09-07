@@ -718,25 +718,34 @@ body {
     .form__btn:hover {
       background-color: #caa270; }
 
-.story__video {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  background-image: url("../images/mountain-lrg.jpeg");
-  background-size: cover; }
-
-.story__content {
-  background-color: #f9f7f6;
-  color: #111;
-  padding: 6vw 6vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; }
-
-.story__text {
-  font-size: 1.5rem;
-  margin-bottom: 4rem; }
+.story {
+  display: flex; }
+  @media only screen and (max-width: 56.25em) {
+    .story {
+      flex-wrap: wrap-reverse; } }
+  .story__img {
+    flex: 1 1 50%;
+    background-image: url("../images/mountain-lrg.jpeg");
+    background-size: cover;
+    background-position: center; }
+    @media only screen and (max-width: 56.25em) {
+      .story__img {
+        height: 450px;
+        flex: 1 1 100%; } }
+  .story__content {
+    flex: 1 1 50%;
+    background-color: #f9f7f6;
+    color: #111;
+    padding: 6vw 6vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    @media only screen and (max-width: 56.25em) {
+      .story__content {
+        flex: 1 1 100%; } }
+  .story__text {
+    font-size: 1.5rem;
+    margin-bottom: 4rem; }
 
 .technique {
   color: #f9f7f6; }

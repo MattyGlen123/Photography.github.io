@@ -1,11 +1,11 @@
-# Real Cumrbia
-This project is a template site for a local photographer and I chance for me to develope my skills.
+# Real Cumbria
+This project is a template site for a local photographer and a chance for me to develope my skills.
 
 screenshot here!
 
 ## Motivation
-I've designed and made the project to convince a local photographer that I can create a new and improved website for his buisness.
-His current site isn't responsive and dosen't highlight his work. I've created the landing page template to give a taste of the final design.
+I've designed and made the project to convince a local photographer that I can create a new and improved website for his business.
+His current site isn't responsive and doesn’t highlight his work. I've created the landing page template to give a taste of the final design.
 
 ### TODO
 Subpages will be included:

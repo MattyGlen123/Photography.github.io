@@ -1,7 +1,7 @@
+![Screen Shot of header](https://res.cloudinary.com/drldpyegp/image/upload/v1537434902/Screen_Shot_2018-09-20_at_10.13.55.png)
+
 # Real Cumbria
 This project is a template site for a local photographer and a chance for me to develope my skills.
-
-screenshot here!
 
 ## Motivation
 I've designed and made the project to convince a local photographer that I can create a new and improved website for his business.

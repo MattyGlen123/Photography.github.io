@@ -5,6 +5,25 @@
   grid-template-rows: repeat(7, 5vw);
   grid-gap: 1.5rem;
   padding:  20rem 1.5rem;
+  position: relative;
+
+  &__title--sml {
+    display: none;
+    color: $color-tertiary;
+    font-size: 5rem;
+    text-transform: uppercase;
+    font-family: $font-display;
+  }
+
+  @include respond(phone) {
+    &__title--sml {
+      display: block;
+      position: absolute;
+      top: 7%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
 
   @include respond(phone) {
     grid-template-rows: repeat(12, 15vw);

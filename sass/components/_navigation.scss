@@ -5,7 +5,7 @@
     display: none;
   }
 
-  &__btn {
+  &__btn { // This is the label, which is attached to the checkbox element
     background-color: $color-primary;
     height: 7rem;
     width: 7rem;
@@ -83,16 +83,16 @@
 
 // Functionaility for nav!
 
-  &__checkbox:checked ~ &__background {
+  &__checkbox:checked ~ &__background { // the ~ symbol selects a sibling element
     transform: scale(80);
   }
 
-  &__checkbox:checked ~ &__nav { // the ~ symbol selects a sibling element
-    opacity: 1;
+  &__checkbox:checked ~ &__nav { // when the navigation-btn(label) is clicked, the checkbox is checked.
+    opacity: 1; 
     width: 100%;
   }
 
-// Icon
+// Icon Hamburger Menu
 
   &__icon {
     position: relative;
